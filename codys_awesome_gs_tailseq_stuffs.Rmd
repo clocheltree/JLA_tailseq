@@ -1,0 +1,12 @@
+---
+title: "codys_awesome_gs_tailseq_stuffs"
+author: "Cody Ocheltree"
+date: "5/23/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
