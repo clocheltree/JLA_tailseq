@@ -16,10 +16,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 # Install reticulate package (only once)
-# copy and paste this in the console: install.packages(“reticulate”)
+# Copy and paste this in the console: install.packages(“reticulate”)
 
 # Load reticulate package
 library(reticulate)
+
+# Is python available? TRUE if yes
+py_available()
 ```
 
 # Let's use the patented JLA Quickfix Tailseq Analyzer to align our reads:
