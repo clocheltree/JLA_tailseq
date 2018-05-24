@@ -16,14 +16,19 @@ knitr::opts_chunk$set(echo = TRUE)
 QuickFix_Tailseq_analyzer_using_alignments_variable_input_file.py
 
 ```{python}
+path = raw_input("~/Desktop/TUT2_analysis/501701")
+seqfile = raw_input("~/Desktop/TUT2_analysis/tailseq_pipeline/Human_snRNA_sequences_FASTA_4_3rea_bglobin_exoALL_7sk_7sl.txt")
+```
+
+```{python}
 #Needs a CSV file (Windows!) with columns containing sequence, number of unique reads, number of reads (only columns 1 and 2 are used). No header.
 #Needs FASTA file with RNA sequences to align to
 #Aligns reads with tRNA sequences from FASTA file
 #Returns a "Taildata" file listing sequences, counts, identified gene, 3' end positions, tail length and sequence.
 
 
-path = raw_input("Enter the directory to be analyzed (e.g. Data/): ")
-seqfile = raw_input("Enter filename of the txt file containing RNAs to analyze for: ")
+path = raw_input("~/Desktop/TUT2_analysis/501701")
+seqfile = raw_input("~/Desktop/TUT2_analysis/tailseq_pipeline/Human_snRNA_sequences_FASTA_4_3rea_bglobin_exoALL_7sk_7sl.txt")
 
 from glob import glob
 import csv
@@ -230,5 +235,9 @@ for datafile in data_filenames:
 	f = open(savefile, 'w')
 	csv.writer(f).writerows(Masterlist)
 	f.close()
+```
+
+```{r}
+path
 ```
 
